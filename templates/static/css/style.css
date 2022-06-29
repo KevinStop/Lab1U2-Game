@@ -1,0 +1,159 @@
+/*Selector Universal*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Selector de la etiqueta body de la pagina
+    Estilo que contendra el color de fondo de la pagina 
+    y cambiara y alineara los items de esta.
+*/
+body{
+    background: white;
+}
+
+/*Selector de clase que llama al: "Contenedor"
+    Especificacion del tamaño del contenedor
+    Posicionamiento del elemento en relativo
+    El fondo del contenedor trabajara con color 
+*/
+.contenedor {
+    width: 920px;
+    height: 280px;
+    margin: 0 auto;
+    
+    position: relative;
+
+    background: linear-gradient(#b7d6c7, transparent) #ffe2d1;/*linear-gradient(#90ebff, white);*/
+    transition: background-color 1s linear;
+    overflow: hidden;
+}
+
+/*Selector de clase usado en javascript: "mediodia"
+    Cambia el color del fondo del contenedor*/
+.mediodia {
+    background-color: #ffdcf3;
+}
+
+/*Selector de clase usado en javascript: "tarde"
+    Cambia el color del fondo del contenedor*/
+.tarde {
+    background-color: #ffadad;
+}
+
+/*Selector de clase usado en javascript: "noche"
+    Cambia el color del fondo del contenedor*/
+.noche {
+    background-color: #aca8c7;
+}
+
+/*Selector de clase que llama al: "player"
+    Posiciona de manera absoluta la imagen del 
+    player dentro del cotenedor*/
+.player {
+    width: 84px;
+    height: 84px;
+
+    position: absolute;
+   
+
+    background: url(/static/img/sonic.gif) repeat-x 0px 0px;
+}
+
+/*Instancia el posicionamiento del personaje al estrellarse*/
+.player-estrellado {
+    background-position-x: -252px;
+}
+
+/*Selector de clase que llama al: "suelo"
+    Posiciona de manera absoluta la imagen del 
+    suelo dentro del cotenedor*/
+.suelo {
+    width: 200%;
+    height: 42px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background: url(/static/img/suelo.png) repeat-x 0px 0px;
+    background-size: 50% 42px;
+
+}
+
+/*Selector de clase usado en javascript: "cactus"
+    Posiciona de manera absoluta la imagen del 
+    cactus dentro del cotenedor*/
+.cactus{
+    width: 46px;
+    height: 96px;
+
+    position: absolute;
+    bottom: 16px;
+    left: 600px;
+    z-index: 1;
+
+    background: url(/static/img/cactus1.png) no-repeat;
+}
+
+/*Selector de clase usado en javascript: "cactus2"
+    Posiciona de manera absoluta la imagen del 
+    cactus2 dentro del cotenedor*/
+.cactus2{
+    width: 98px;
+    height: 66px;
+
+    background: url(/static/img/cactus2.png) no-repeat;
+}
+
+/*Selector de clase usado en javascript: "nube"
+    Posiciona de manera absoluta la imagen del 
+    nube dentro del cotenedor*/
+.nube{
+    width: 92px;
+    height: 92px;
+
+    position: absolute;
+    z-index: 0;
+
+    background: url(/static/img/nube.png) no-repeat;
+    background-size: 92px 26px;
+}
+
+/*Selector de clase que llama al: "score"
+    Posiciona de manera absoluta el contenido
+    Cambia el color y tipo de letra
+    Cambio del tamaño y alineacion del contenido*/
+.score{
+    width: 100px;
+    height: 30px;
+
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 10;
+
+    color: #d48871;
+    font-family: Verdana;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+}
+
+/*Selector de clase que llama al: "game-over"
+    Posiciona de manera absoluta el contenido de game-over
+    Alinea el texto en el centro y cambia su color
+    Cambia el tipo de texto, su tamaño y ancho*/
+.game-over{
+    display: none;
+
+    position: absolute;
+    width: 100%;
+
+
+    text-align: center;
+    color: #7e928b;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+}
